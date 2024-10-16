@@ -1,0 +1,28 @@
+regdata:
+  path: $DATA
+  dl_path: https://fabdatastorage.blob.core.windows.net/teacherai-analysis
+  dl_type: .gz
+  file: registration_data_anon.csv
+
+chatdata:
+  path: $DATA
+  dl_path: https://fabdatastorage.blob.core.windows.net/teacherai-analysis
+  dl_type: .gz
+  file: chat_data_anon.csv
+
+allocate_params:
+  max_size_difference: 1
+  balance_histogram:
+    gender: 1
+    qualification: 2
+    class: 1
+    headteacher: 1
+  balance_mean:
+    n_signed_up: 6.5
+  balance_pairwise: False
+  max_unique_linked:
+    2: 10
+  
+thread_params:
+  model: gpt-4o-mini-2024-07-18
+  threadlabel: Algorithm1

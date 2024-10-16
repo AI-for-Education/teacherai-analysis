@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "teacherai-analysis"
+version = "0.1.0"
+requires-python = "< 3.12"
+dependencies = [
+    "numpy == 1.26.*",
+    "pandas == 2.2.*",
+    "levenshtein == 0.26.*",
+    "matplotlib == 3.9.*",
+    "scipy == 1.14.*",
+    "pyqt5 == 5.15.*",
+    "pyyaml == 6.0.*",
+    "requests == 2.32.*",
+    "fabdata-llm@git+https://github.com/AI-for-Education/fabdata-llm.git@v0.21.1",
+    "openai == 1.45.*",
+    "fuzzywuzzy[speedup] == 0.18.*",
+]
+
